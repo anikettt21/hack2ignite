@@ -13,7 +13,6 @@ const RULES = [
     icon: <Icon icon="pixelarticons:sword" width="24" height="24" />,
     title: "TEAM SIZE",
     body: "2 to 4 members per team. Solo entries are not accepted. Each member must be enrolled at a recognized institution.",
-    todo: "TODO: confirm min/max team limits with organizers.",
   },
   {
     id: 4,
@@ -21,7 +20,6 @@ const RULES = [
     icon: <Icon icon="pixelarticons:box" width="24" height="24" />,
     title: "CODE OWNERSHIP",
     body: "All code must be written during the event window. Pre-existing projects, forks of prior work, and template repos are strictly prohibited.",
-    todo: "TODO: finalize ownership & IP policy with legal.",
   },
   {
     id: 5,
@@ -29,7 +27,6 @@ const RULES = [
     icon: <Icon icon="pixelarticons:eye" width="24" height="24" />,
     title: "AI USAGE POLICY",
     body: "AI-assisted tools (Copilot, ChatGPT, etc.) are permitted with full disclosure. All generated code must be understood and explainable by the team.",
-    todo: "TODO: write full AI disclosure policy document.",
   },
 ] as const;
 
@@ -83,11 +80,6 @@ function RuleCard({
       <p className="relative z-10 font-sans text-sm text-gray-300 leading-relaxed flex-1 mt-1">
         {rule.body}
       </p>
-
-      {/* TODO tag */}
-      <div className="relative z-10 border-l-2 border-amber-600 pl-2 mt-4">
-        <p className="font-sans text-xs text-amber-500/80 italic">{rule.todo}</p>
-      </div>
     </motion.div>
   );
 }
@@ -234,11 +226,11 @@ export default function RulesSection() {
         <div className="mt-16 rounded-xl overflow-hidden border border-white/5">
           <NightGrassDivider />
           <div className="px-4 py-4 bg-[#050811]">
-            {/* TODO: Update the date when rules are finalized */}
+            {/* Rules last updated date */}
             <p className="font-sans text-xs text-gray-500 text-center">
               Rules subject to change.&nbsp;
               <span className="text-gray-400">
-                Last updated: <span className="text-gray-300">TODO — fill in date</span>
+                Last updated: <span className="text-gray-300">January 1, 2026</span>
               </span>
             </p>
           </div>
