@@ -1,4 +1,3 @@
-import ReactLenis from "lenis/react";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
@@ -6,15 +5,11 @@ import TimelineSection from "./components/TimelineSection";
 import RulesSection from "./components/RulesSection";
 import PrizesSection from "./components/PrizesSection";
 import FaqSection from "./components/FaqSection";
-import { BlockParticles, BottomCTA } from "./components/PolishLayer";
+import { BottomCTA } from "./components/PolishLayer";
 
 export default function Home() {
   return (
     <>
-      {/* ── Section 5: Ambient particle canvas (reduced-motion safe) ── */}
-      <BlockParticles />
-
-      <ReactLenis root />
       <Navbar />
 
       <main id="main-content">
