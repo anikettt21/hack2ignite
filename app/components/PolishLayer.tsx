@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "motion/react";
 import { Icon } from '@iconify/react';
 import { playDingSound, playClickSound } from "../utils/sounds";
 
-/* TODO: Replace with real Unstop registration link */
-const REGISTER_URL = "https://unstop.com/placeholder-todo";
+/* TODO: Replace with the real Unstop registration link */
+const REGISTER_URL = "https://unstop.com";
 
 /* ── Falling block particles ─────────────────────────────────────── */
 // Automatically disabled when prefers-reduced-motion is set or on mobile.

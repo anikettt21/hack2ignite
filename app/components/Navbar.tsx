@@ -13,8 +13,8 @@ const NAV_LINKS = [
   { label: "FAQ",      href: "#faq",      icon: <Icon icon="pixelarticons:message" /> },
 ] as const;
 
-/* TODO: Replace with the real Unstop registration link */
-const REGISTER_URL = "https://unstop.com/placeholder-todo";
+/* TODO: Replace with real registration URL */
+const REGISTER_URL = "https://unstop.com";
 
 export default function Navbar() {
   const [activeHash, setActiveHash] = useState("#hero");

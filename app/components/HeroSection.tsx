@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 import { playClickSound } from "../utils/sounds";
 
 /* TODO: Replace with the real Unstop registration link */
-const REGISTER_URL = "https://unstop.com/placeholder-todo";
+const REGISTER_URL = "https://unstop.com";
 
 const LOADER_SEGMENTS = 20;
 
