@@ -1,32 +1,85 @@
 import ReactLenis from "lenis/react";
 import Image from "next/image";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import TimelineSection from "./components/TimelineSection";
+import RulesSection from "./components/RulesSection";
+import PrizesSection from "./components/PrizesSection";
+import FaqSection from "./components/FaqSection";
+import { BlockParticles, BottomCTA } from "./components/PolishLayer";
 
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen w-full">
-        <ReactLenis />
-        {/* hero section  */}
-        <div className=""></div>
+      {/* ── Section 5: Ambient particle canvas (reduced-motion safe) ── */}
+      <BlockParticles />
 
-        {/* prize pool section  */}
-        <div className=""></div>
+      <ReactLenis root />
+      <Navbar />
 
-        {/* tracks themes  */}
-        <div className=""></div>
+      <main id="main-content">
+        {/* ── Section 1: Hero (closes issue #1) ── */}
+        <HeroSection />
 
-        {/* sponsers  */}
-        <div className=""></div>
+        {/* ── Section 2: Timeline (closes issue #2) ── */}
+        <TimelineSection />
 
-        {/* timeline schdule  */}
-        <div className=""></div>
+        {/* ── Section 3: Rules & Eligibility (closes issue #3) ── */}
+        <RulesSection />
 
-        {/* faq section  */}
-        <div className=""></div>
+        {/* ── Section 4: Prize Pool & Sponsors (closes issue #4) ── */}
+        <PrizesSection />
 
-        {/* footer section  */}
-        <div className=""></div>
-      </div>
+        {/* ── END SECTIONS WRAPPER (FAQ & CTA) ── */}
+        <div className="relative w-full">
+          {/* Shared Background for FAQ & Bottom CTA */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/all-set-bg.jpg"
+              alt="Ready to Join Minecraft Server"
+              fill
+              className="object-cover object-center opacity-40"
+              priority
+            />
+            {/* Gradient overlays to blend smoothly with previous section and footer */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0A0F15] via-black/40 to-[#0A0202]" />
+          </div>
+
+          <div className="relative z-10">
+            {/* ── Section 5: FAQ Chat Log ── */}
+            <FaqSection />
+
+            {/* ── Section 6: Bottom CTA / "JOIN SERVER" push (closes issue #5) ── */}
+            <BottomCTA />
+          </div>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer
+        className="border-t border-white/10 py-8 px-6 bg-[#0A0202] relative z-20"
+        role="contentinfo"
+        aria-label="Site footer"
+      >
+        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="font-sans text-[0.65rem] font-bold text-gray-500 tracking-widest">
+            HACK2IGNITE © 2026 — ALL RIGHTS RESERVED
+          </p>
+          <div className="flex gap-6">
+            {/* TODO: Add real social/contact links */}
+            {["DISCORD", "INSTAGRAM", "LINKEDIN"].map((link) => (
+              <a
+                key={link}
+                href="#"
+                className="font-sans text-[0.65rem] font-bold text-gray-500 hover:text-white transition-colors tracking-widest block-highlight"
+                aria-label={`${link} — TODO: add real link`}
+              >
+                {link}
+              </a>
+            ))}
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
