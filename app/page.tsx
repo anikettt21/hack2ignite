@@ -1,3 +1,4 @@
+import ReactLenis from "lenis/react";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
@@ -10,6 +11,7 @@ import { BottomCTA } from "./components/PolishLayer";
 export default function Home() {
   return (
     <>
+      <ReactLenis root />
       <Navbar />
 
       <main id="main-content">
