@@ -61,23 +61,10 @@ export default function Home() {
         role="contentinfo"
         aria-label="Site footer"
       >
-        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-sans text-[0.65rem] font-bold text-gray-500 tracking-widest">
+        <div className="max-w-[1200px] mx-auto flex flex-col items-center justify-center gap-4">
+          <p className="font-sans text-[0.65rem] font-bold text-gray-500 tracking-widest text-center">
             HACK2IGNITE © 2026 — ALL RIGHTS RESERVED
           </p>
-          <div className="flex gap-6">
-            {/* TODO: Add real social/contact links */}
-            {["DISCORD", "INSTAGRAM", "LINKEDIN"].map((link) => (
-              <a
-                key={link}
-                href="#"
-                className="font-sans text-[0.65rem] font-bold text-gray-500 hover:text-white transition-colors tracking-widest block-highlight"
-                aria-label={`${link} — TODO: add real link`}
-              >
-                {link}
-              </a>
-            ))}
-          </div>
         </div>
       </footer>
     </>
