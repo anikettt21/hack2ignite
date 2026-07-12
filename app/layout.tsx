@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Pixelify_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     description: "A Minecraft-themed hackathon for builders and creators.",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  width: 1280,
 };
 
 export default function RootLayout({
