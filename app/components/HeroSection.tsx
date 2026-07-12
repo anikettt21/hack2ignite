@@ -60,7 +60,7 @@ function WorldLoader({ onComplete }: { onComplete: () => void }) {
         HACK2IGNITE
       </div>
       <div className="font-pixel text-gray-400 text-[0.4rem] mb-12 tracking-wider">
-        A MINECRAFT-THEMED HACKATHON
+        A 24-HOUR HACKATHON
       </div>
 
       {/* Loading bar */}
@@ -206,7 +206,7 @@ export default function HeroSection() {
             
             <p className="font-sans text-base md:text-lg text-gray-300 mb-10 font-medium leading-relaxed max-w-xl"
                style={{ textShadow: "0 2px 6px rgba(0,0,0,0.9)" }}>
-              Immerse yourself in a 24-hour Minecraft-themed hackathon. Craft innovative solutions, mine your creative potential, and ignite the leaderboard in an unforgettable developer experience.
+              Immerse yourself in a 24-hour hackathon. Craft innovative solutions, mine your creative potential, and ignite the leaderboard in an unforgettable developer experience.
             </p>
 
             {/* CTA */}

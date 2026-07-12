@@ -20,10 +20,10 @@ const jabrisFont = localFont({
 export const metadata: Metadata = {
   title: "hack2ignite — Build. Break. Ignite.",
   description:
-    "hack2ignite is a Minecraft-themed hackathon where builders, breakers, and creators come together to forge something legendary. Register now.",
+    "hack2ignite is a hackathon where builders, breakers, and creators come together to forge something legendary. Register now.",
   openGraph: {
     title: "hack2ignite — Build. Break. Ignite.",
-    description: "A Minecraft-themed hackathon for builders and creators.",
+    description: "A hackathon for builders and creators.",
     type: "website",
   },
 };
